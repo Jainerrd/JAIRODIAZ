@@ -1,3 +1,7 @@
+:root{
+    --blue : #053CF9;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +16,9 @@ header{
     height: 90vh;
     width: auto;
     background-color: gray;
+    /* background-image: url(imgs/pintor-banner.png); */
+    background-position: center;
+    background-size: cover;
 }
 
 header nav{ /* barra de navegacion*/
@@ -54,7 +61,7 @@ nav ul li{
 
 #acerca-de-mi{
     height: 70vh;
-    background-color: aquamarine;
+    background-color: var(--blue);
     width: auto;
     display: flex;
     justify-content: center;
@@ -116,7 +123,48 @@ nav ul li{
     width: auto;
 }
 
+#reseñas {
+    background-color: red;
+    height: auto;
+    
+}
 
+.reseñas_text{
+    background-color: green;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0.9em;
+}
+
+.reseñas_cards{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.resenas_card{
+    background-color: gray;
+    width: 50em;
+    height: auto;
+    margin: 0em 1em;
+    padding: 2em;
+}
+
+.resenas_card-title{
+    display: flex;
+    margin: 1em 0em;
+    align-items: center;
+}
+
+.resenas_card img{
+    margin: 0em 0.5em 0em 0em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 
 footer{
     display: flex;
@@ -136,7 +184,6 @@ footer{
 .redesSociales img{
     height: 2em;
     width: 2em;
-    background-color: rebeccapurple;
     margin: 0em 0.5em;
 }
 
