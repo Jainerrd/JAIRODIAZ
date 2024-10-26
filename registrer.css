@@ -1,3 +1,8 @@
+:root{
+    --blue : #001a7d;
+    --gray :  #e4e4e4;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,14 +15,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--gray);
 }
 
+
 .target{
-    background-color: red;
+    background-color: var(--blue);
     width: auto;
     height: auto;
     padding: 10px;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+}
+
+.target_crear{
+    text-align: center;
 }
 
 .target_inputs-names{
@@ -25,12 +41,69 @@ body{
 
 }
 
-#name, #lastname, #email, #password{
+#name, #lastname, #email, #password, #email{
     display: inline;
     width: 50%;
-    height: 2em;
+    height: 3em;
     border: none;
     padding: 10px;
     border-radius: 3px;
     margin: 3px;
+    outline: none;
+}
+
+#password, #email{
+    width: 100%;
+}
+
+
+.target_inputs-genero{
+    display: flex;
+
+}
+
+.input_genero-mujer, .input_genero-hombre {
+    background-color: var(--gray);
+    color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 2em;
+    border-radius: 3px;
+    margin: 3px;
+    text-align: center;
+}
+
+input[type="radio"]{
+    margin-left: 0.5em;
+}
+
+button{
+    width: 50%;
+    height: 3em;
+    border: 1px solid var(--gray);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 3px;
+    background-color: var(--blue);
+    color: var(--gray);
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: var(--gray);
+    color: var(--blue);
+}
+
+
+@media (min-width: 1025px) and (max-width: 8000px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+
+    }
 }
