@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.target{
+    background-color: red;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.target_inputs-names{
+    display: flex;
+
+}
+
+#name, #lastname, #email, #password{
+    display: inline;
+    width: 50%;
+    height: 2em;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 3px;
+}
