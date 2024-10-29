@@ -23,13 +23,13 @@
             <label for="genero">Género</label>
             <div class="target_inputs-genero">
                 <div class="input_genero-mujer">
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" name="opcion" value="mujer" class="genero">
+                    <label for="mujer">Mujer<input type="radio" name="opcion" value="mujer" class="genero" id="radio-mujer"></label>
+                    
                 </div>
 
                 <div class="input_genero-hombre">
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" name="opcion" value="hombre" class="genero">
+                    <label for="hombre">Hombre<input type="radio" name="opcion" value="hombre" class="genero" id="radio-hombre"></label>
+                    
                 </div>
                 
             </div>
@@ -44,8 +44,9 @@
 
         </div>
 
-        <button type="submit">Registrarse</button>
+        <a href="#"><button type="submit" onclick="registrar()">Registrarse</button></a>
     </div>
     
+    <script src="registrer.js"></script>
 </body>
 </html>
