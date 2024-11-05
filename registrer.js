@@ -42,11 +42,11 @@ function limpiarInputs(){
 const validarEmail = document.getElementById("validarEmail")
 const validarPassword = document.getElementById("validarPassword")
 
-function validarInfo(){
+/*function validarInfo(){
     console.log(validarEmail.value)
     console.log(validarPassword.value)
 
     if()
-}
+}*/
 
 
