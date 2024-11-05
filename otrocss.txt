@@ -1,0 +1,374 @@
+:root{
+    --blue : #001a7d;
+    --gray :  #e4e4e4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "heading-now";
+    src: url('imgs/fonts/HeadingNowTrial-68HeavyItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "heading-now-light";
+    src: url('imgs/fonts/HeadingNowTrial-64RegularItalic.ttf');
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    margin: 0;
+    font-size: 16px;
+}
+
+#home{
+    background-color: var(--blue);
+    height: 80vh;
+    width: 100%;
+}
+
+#home h2{
+    font-size: 16px;
+}
+
+#home nav{
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 0px;
+    z-index: 100;
+}
+
+#home nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home nav ul li a{
+    text-decoration: none;
+    color: var(--blue);
+    margin: 0em 0.5em;
+}
+
+
+
+#home nav a button{
+    width: auto;
+    padding: 5px;
+    font-size: 6px;
+    margin: 0em 0.5em;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--blue);
+    color: var(--gray);
+}
+
+.header-text_1 {
+    font-family: "heading-now-light";
+    margin-right: 0.2em;
+}
+
+.header-text_2 {
+    font-family: "heading-now";
+}
+
+#home .header-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+}
+
+
+
+#acerca-de-mi{
+    width: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 1em;
+}
+
+#acerca-de-mi img{
+    background-color: gray;
+    display: block;
+    min-height: 10em;
+    min-width: 18em;
+}
+
+#acerca-de-mi p{
+    max-width: 18em;
+    margin-top: 1em;
+    height: auto;
+    position: relative;
+}
+
+#servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 3em;
+}
+
+.servicios-cap{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    border-radius: 0.3em;
+    padding: 0.6em;
+    height: auto;
+    width: auto;
+    margin: 0.5em;
+}
+
+.servicios-cap p{
+    max-width: 100%;
+}
+
+#servicios img{
+    margin-bottom: 0.5em;
+    object-fit: cover;
+    max-height: 10em;
+    background-color: gray;
+}
+
+.servicios-cap button{
+    width: auto;
+    height: 3em;
+    border: 1px solid var(--gray);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 1em 0em;
+    background-color: var(--blue);
+    color: var(--gray);
+    transition: 0.3s;
+}
+
+#reseñas{
+    padding: 0.5em;
+    background-color: var(--blue);
+}
+
+.reseñas_text{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.resenas_card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-size: 13px;
+    width: auto;
+}
+
+.resenas_card-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.resenas_card img{
+    width: 30px;
+    margin-right: 0.5em;
+    display: inline;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+}
+
+footer h2{
+    font-size: 20px;
+}
+
+.redesSociales{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesSociales img{
+    width: 20px;
+    margin: 0em 0.2em;
+}
+
+/*--- TABLETS ---   */
+
+@media (min-width: 601px) and (max-width: 768px){
+
+    body{
+        font-size: 18px;
+    }
+
+    #home nav{
+        font-size: 12px;
+    }
+
+    #home nav a button{
+        font-size: 12px;
+    }
+
+    #acerca-de-mi img{
+        min-width: 25em;
+        min-height: 14em;
+    }
+
+    #acerca-de-mi p{
+        min-width: 25em;
+    }
+
+    .servicios-cap{
+        max-width: 28em;
+        max-height: 30em;
+    }
+
+    #servicios img{
+       background-color: green;
+       width: 100%;
+       max-height: 12em;
+    }
+
+    .reseñas_text{
+        font-size: 16px;
+    }
+
+    .reseñas_cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/*--- escritorio ---*/
+
+@media (min-width: 769px) and (max-width: 2560px){
+    
+    body{
+        font-size: 18px;
+    }
+
+    #home{
+        height: 90vh;
+    }
+
+    #home .header-text{
+        font-size: 3em;
+        font-family: ;
+    }
+
+    #home nav{
+        font-size: 16px;
+    }
+
+    #home h2{
+        font-size: 20px;
+    }
+
+    #home nav a button{
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    #home nav a button:hover{
+        color: var(--blue);
+        background-color: var(--gray);
+        border: 1px var(--blue) solid;
+    }
+
+    #acerca-de-mi{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40em;
+    }
+
+    #acerca-de-mi p{
+        max-width: 30em;
+        margin: 1em;
+        font-size: 18px;
+    }
+
+    #acerca-de-mi img{
+        min-height: 25em;
+        min-width: 40em;
+    }
+
+    /*---------------------------*/
+
+    #servicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicios-cap{
+        min-width: 20em;
+        height: 25em;
+    }
+
+    .servicios-cap p{
+        max-width: 30em;
+    }
+
+    #servicios img{
+       background-color: green;
+       width: 100%;
+       min-height: 15em;
+    }
+
+    #servicios .servicios-cap img{
+        background-color: blue;
+        height: 10em;
+    }
+
+    .resenas_card{
+        font-size: 16px;
+        min-width: 30em;
+        max-width: 2em;
+    }
+
+    .reseñas_cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+    }
+}
+
+

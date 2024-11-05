@@ -1,54 +1,52 @@
-console.log("hellow world")
+const nameInput = document.getElementById("name");
+const lastNameInput = document.getElementById("lastname");
+const generoInput = document.getElementById("opcion");
+const emailInput  = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const botonRegistrar = document.getElementById("submit");
 
-const username = document.getElementById("name")
-const lastName = document.getElementById("lastname")
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const genero_mujer = document.getElementById("radio-mujer")
-const genero_hombre = document.getElementById("radio-hombre");
 
 
 
 
 function registrar(){
-    /* console.log(username.value);
-    console.log(lastName.value);
+    /* Event.preventDefault(); */
 
-    if (genero_hombre.checked){
-        console.log(genero_hombre.value)
-    }else{
-        console.log(genero_mujer.value)
-    }
+    const name = nameInput.value;
+    const lastname = lastNameInput.value;
+    const email = emailInput.value;
+    const password = passwordInput.value;
 
-    console.log(email.value);
-    console.log(password.value);*/ 
+    const newUser = {name, lastname, email, password}
 
-    /* -------------------------------------------*/
+    let user = JSON.parse(localStorage.getItem('user')) || [];  // con esto obtengo los usuarios existentes
 
-    localStorage.setItem("nombre", username.value);
-    localStorage.setItem("apellido", lastName.value);
-   
-    if (genero_hombre.checked){
-        localStorage.setItem("genero", genero_hombre.value);
-    }else{
-        localStorage.setItem("genero", genero_mujer.value);
-    }
+    localStorage.setItem('user', JSON.stringify(newUser)) ;  // guardo a new user
 
-    localStorage.setItem("email", email.value);
-    localStorage.setItem("password", password.value);
+    user.push(newUser); // agrego el nuevo usuario al arreglo
 
-    alert("Ya has sido registrado!")
+    localStorage.setItem('user', JSON.stringify(user)); // almaceno el arreglo actualizado en el localStorage
+
+    alert("Has sido registrado")
+
+    limpiarInputs()
 }
 
-const nombreGuardado = localStorage.getItem("nombre");
-const apellidoGuardado = localStorage.getItem("apellido");
-const generoGuardado = localStorage.getItem("genero");
-const emailGuardado = localStorage.getItem("email");
-const passwordGuardado = localStorage.getItem("password");
+function limpiarInputs(){
+    nameInput.value = "";
+    lastNameInput.value = "";
+    emailInput.value = "";
+    passwordInput.value = "";
+}
 
-console.log(nombreGuardado)
-console.log(apellidoGuardado)
-console.log(generoGuardado)
-console.log(emailGuardado)
-console.log(passwordGuardado)
+const validarEmail = document.getElementById("validarEmail")
+const validarPassword = document.getElementById("validarPassword")
+
+function validarInfo(){
+    console.log(validarEmail.value)
+    console.log(validarPassword.value)
+
+    if()
+}
+
 

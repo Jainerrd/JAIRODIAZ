@@ -1,11 +1,29 @@
-const nombreGuardado = localStorage.getItem("nombre");
-const apellidoGuardado = localStorage.getItem("apellido");
-const generoGuardado = localStorage.getItem("genero");
-const emailGuardado = localStorage.getItem("email");
-const passwordGuardado = localStorage.getItem("password");
+/* const form = document.getElementById('formRegister');
+const nameInput = document.getElementById ("nameInput");
+const emailInput = document.getElementById('emailInput' );
+const tableBody = document-getElementById('tableBody');
 
-console.log(nombreGuardado)
-console.log(apellidoGuardado)
-console.log(generoGuardado)
-console.log(emailGuardado)
-console.log(passwordGuardado)
+let data = JSON.parse(localStorage.getItem ("formData")) || [];
+
+
+form.addEventListener( 'submit', function (event)) {
+    Event.preventDefault();
+
+    const name = nameInput.value;
+    const email = emailInput.value;
+
+    if(name && email){
+        const newData = {name, email};
+        data.push(newData);
+        saveDataToLocalStorage();
+    }
+
+}
+
+
+function saveDataToLocalStorage () {
+localStorage.setItem("formData", JSON. stringify(data))
+
+*/
+
+
