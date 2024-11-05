@@ -51,9 +51,9 @@ function validarInfo(){
 
     for (let i = 0; i < user.length; i++) {
         if(validarEmail.value === user[i].gmail && validarPassword.value === user[i].contraseña){
-            console.log("si")
+            alert("has iniciado sesion")
         }else{
-            console.log("no")
+            alert("datos incorrectos")
         }
             
     }
