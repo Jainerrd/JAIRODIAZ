@@ -6,7 +6,7 @@ const passwordInput = document.getElementById("password");
 const botonRegistrar = document.getElementById("submit");
 
 
-
+// REGISTRAR USUARIOS
 
 
 function registrar(){
@@ -40,6 +40,7 @@ function limpiarInputs(){
 }
 
 
+// INICIO DE SESION DE USUARIOS
 
 
 const validarEmail = document.getElementById("validarEmail");
